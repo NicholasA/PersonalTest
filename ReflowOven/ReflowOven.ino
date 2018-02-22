@@ -1,3 +1,5 @@
+// Two k type thermocouples are used to measure the tempriture of a reflow oven
+// and a Solid State Relay is used control the heating element
 #include <max6675.h>
 #include <Wire.h>
 
