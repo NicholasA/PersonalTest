@@ -18,7 +18,6 @@ const int buttonTwo = 8;
 //Arrays with the thermal profiles [temp][time in seconds]
 const int[2][6] standard = [[0,150,150,250,250,0],[0,100,180,240,260,360]]; 
 int startTime = 0;
-int targetTempCounter = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -41,4 +40,13 @@ void loop() {
    
  
 delay(1000);
+}
+
+bool heatingElement(int[][] profile){
+  // given a particular profile should at this time the element be turned on.
+  int currentTime = millis() - startTime;
+  for(int i =0; currentTime <= profile[1][i]; i++){
+    int targetTemp =;
+
+  }
 }
