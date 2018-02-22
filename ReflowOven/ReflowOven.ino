@@ -15,11 +15,14 @@ const int SSR = 2;
 const int buttonOne = 7;
 const int buttonTwo = 8;
 
-int targetTemp = 0;
+//Arrays with the thermal profiles [temp][time in seconds]
+const int[2][6] standard = [[0,150,150,250,250,0],[0,100,180,240,260,360]]; 
+int startTime = 0;
+int targetTempCounter = 0;
 
 void setup() {
   Serial.begin(9600);
-  
+  time = millis;
   pinMode(SSR, OUTPUT);
   pinMode(buttonOne, INPUT);
   pinMode(buttonTwo, INPUT);
@@ -35,7 +38,6 @@ void loop() {
    Serial.println(thermocouple1.readCelsius());
    Serial.print("c2 = ");
    Serial.println(thermocouple2.readCelsius());
-
    
  
 delay(1000);
