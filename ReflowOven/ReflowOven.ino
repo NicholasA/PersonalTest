@@ -1,9 +1,6 @@
 #include <max6675.h>
 #include <Wire.h>
 
-
-#include "max6675.h"
-
 int thermoDO = 6;
 int thermoCLK = 7;
 int thermoCS1 = 5;
