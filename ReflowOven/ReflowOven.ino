@@ -45,8 +45,9 @@ delay(1000);
 bool heatingElement(int[][] profile){
   // given a particular profile should at this time the element be turned on.
   int currentTime = millis() - startTime;
-  for(int i =0; currentTime <= profile[1][i]; i++){
-    int targetTemp =;
+  for(int i =1; currentTime <= profile[1][i]; i++){
+    int targetTemp = profile[i][0];
+    
 
   }
 }
