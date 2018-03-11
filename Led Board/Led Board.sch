@@ -1,0 +1,253 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Led Board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AP1117 VoltageReg1
+U 1 1 5AA4ED73
+P 2850 3600
+F 0 "VoltageReg1" H 2950 3350 50  0000 C CNN
+F 1 "AP1117" H 2850 3850 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 2850 3250 50  0001 C CNN
+F 3 "" H 2950 3350 50  0000 C CNN
+	1    2850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 5AA4EE3A
+P 3150 4050
+F 0 "C2" H 3175 4150 50  0000 L CNN
+F 1 "CP1" H 3175 3950 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeR_EIA-2012" H 3150 4050 50  0001 C CNN
+F 3 "" H 3150 4050 50  0000 C CNN
+	1    3150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 5AA4EEC9
+P 2550 4050
+F 0 "C1" H 2575 4150 50  0000 L CNN
+F 1 "CP1" H 2575 3950 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeR_EIA-2012" H 2550 4050 50  0001 C CNN
+F 3 "" H 2550 4050 50  0000 C CNN
+	1    2550 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3600 3150 3900
+Wire Wire Line
+	2550 3600 2550 3900
+Wire Wire Line
+	2850 3900 2850 4600
+Wire Wire Line
+	2550 4200 3150 4200
+Connection ~ 2850 4200
+Wire Wire Line
+	3150 3600 3600 3600
+Wire Wire Line
+	3600 3600 3600 4600
+Wire Wire Line
+	2550 3600 2100 3600
+Wire Wire Line
+	2100 3600 2100 4600
+$Comp
+L CONN_01X03 P1
+U 1 1 5AA4F62E
+P 2850 4800
+F 0 "P1" H 2850 5000 50  0000 C CNN
+F 1 "CONN_01X03" V 2950 4800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2850 4800 50  0001 C CNN
+F 3 "" H 2850 4800 50  0000 C CNN
+	1    2850 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4600 2950 4600
+Wire Wire Line
+	2100 4600 2750 4600
+Text Label 3600 4100 0    60   ~ 0
+Vout
+Text Label 2100 3850 0    60   ~ 0
+Vin
+Text Label 2850 4300 0    60   ~ 0
+GND
+$Comp
+L LED D1
+U 1 1 5AA4F763
+P 5600 3950
+F 0 "D1" H 5600 4050 50  0000 C CNN
+F 1 "LED" H 5600 3850 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 5600 3950 50  0001 C CNN
+F 3 "" H 5600 3950 50  0000 C CNN
+	1    5600 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5AA4F80A
+P 5600 4300
+F 0 "R1" V 5680 4300 50  0000 C CNN
+F 1 "330" V 5600 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5530 4300 50  0001 C CNN
+F 3 "" H 5600 4300 50  0000 C CNN
+	1    5600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 5AA4F9D4
+P 6050 3950
+F 0 "D2" H 6050 4050 50  0000 C CNN
+F 1 "LED" H 6050 3850 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 6050 3950 50  0001 C CNN
+F 3 "" H 6050 3950 50  0000 C CNN
+	1    6050 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5AA4F9DA
+P 6050 4300
+F 0 "R2" V 6130 4300 50  0000 C CNN
+F 1 "330" V 6050 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 4300 50  0001 C CNN
+F 3 "" H 6050 4300 50  0000 C CNN
+	1    6050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 5AA4FB30
+P 6450 3950
+F 0 "D3" H 6450 4050 50  0000 C CNN
+F 1 "LED" H 6450 3850 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 6450 3950 50  0001 C CNN
+F 3 "" H 6450 3950 50  0000 C CNN
+	1    6450 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5AA4FB36
+P 6450 4300
+F 0 "R3" V 6530 4300 50  0000 C CNN
+F 1 "330" V 6450 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6380 4300 50  0001 C CNN
+F 3 "" H 6450 4300 50  0000 C CNN
+	1    6450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 5AA4FB3C
+P 6900 3950
+F 0 "D4" H 6900 4050 50  0000 C CNN
+F 1 "LED" H 6900 3850 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 6900 3950 50  0001 C CNN
+F 3 "" H 6900 3950 50  0000 C CNN
+	1    6900 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5AA4FB42
+P 6900 4300
+F 0 "R4" V 6980 4300 50  0000 C CNN
+F 1 "330" V 6900 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6830 4300 50  0001 C CNN
+F 3 "" H 6900 4300 50  0000 C CNN
+	1    6900 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3750 5600 3600
+Wire Wire Line
+	5600 3600 7300 3600
+Wire Wire Line
+	6900 3600 6900 3750
+Wire Wire Line
+	6450 3750 6450 3600
+Connection ~ 6450 3600
+Wire Wire Line
+	6050 3600 6050 3750
+Connection ~ 6050 3600
+Wire Wire Line
+	7300 3600 7300 4700
+Connection ~ 6900 3600
+$Comp
+L CONN_01X05 P2
+U 1 1 5AA4FC0D
+P 6500 5350
+F 0 "P2" H 6500 5650 50  0000 C CNN
+F 1 "CONN_01X05" V 6600 5350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 6500 5350 50  0001 C CNN
+F 3 "" H 6500 5350 50  0000 C CNN
+	1    6500 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 4700 6700 4700
+Wire Wire Line
+	6700 4700 6700 5150
+Wire Wire Line
+	6900 4450 6600 4450
+Wire Wire Line
+	6600 4450 6600 5150
+Wire Wire Line
+	6450 4450 6450 5100
+Wire Wire Line
+	6450 5100 6500 5150
+Wire Wire Line
+	6400 5150 6400 4450
+Wire Wire Line
+	6400 4450 6050 4450
+Wire Wire Line
+	5600 4450 5600 4850
+Wire Wire Line
+	5600 4850 6300 4850
+Wire Wire Line
+	6300 4850 6300 5150
+$EndSCHEMATC
