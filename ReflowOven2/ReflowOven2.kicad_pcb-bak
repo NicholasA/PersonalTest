@@ -3,7 +3,7 @@
   (general
     (links 0)
     (no_connects 35)
-    (area 160.909048 86.69238 211.200953 132.945)
+    (area 162.484999 87.554999 202.005001 132.155001)
     (thickness 1.6)
     (drawings 7)
     (tracks 197)
@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x010f0_80000001)
+      (layerselection 0x00030_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 0)
+      (drillshape 1)
       (scaleselection 1)
-      (outputdirectory Gerber/))
+      (outputdirectory ""))
   )
 
   (net 0 "")
@@ -1075,7 +1075,7 @@
   )
 
   (gr_text "Reflow Oven Controller v1.1\nNicholas Anderson, 2018" (at 184.15 113.03 90) (layer B.SilkS)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
   (gr_line (start 201.93 132.08) (end 196.85 132.08) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 201.93 124.46) (end 201.93 132.08) (layer Edge.Cuts) (width 0.15))

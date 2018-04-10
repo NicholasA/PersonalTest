@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Led Board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -115,7 +116,7 @@ Vin
 Text Label 2850 4300 0    60   ~ 0
 GND
 $Comp
-L LED D1
+L LED-RESCUE-Led_Board D1
 U 1 1 5AA4F763
 P 5600 3950
 F 0 "D1" H 5600 4050 50  0000 C CNN
@@ -137,7 +138,7 @@ F 3 "" H 5600 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L LED-RESCUE-Led_Board D2
 U 1 1 5AA4F9D4
 P 6050 3950
 F 0 "D2" H 6050 4050 50  0000 C CNN
@@ -159,7 +160,7 @@ F 3 "" H 6050 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3
+L LED-RESCUE-Led_Board D3
 U 1 1 5AA4FB30
 P 6450 3950
 F 0 "D3" H 6450 4050 50  0000 C CNN
@@ -181,7 +182,7 @@ F 3 "" H 6450 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4
+L LED-RESCUE-Led_Board D4
 U 1 1 5AA4FB3C
 P 6900 3950
 F 0 "D4" H 6900 4050 50  0000 C CNN
